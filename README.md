@@ -40,21 +40,21 @@ Data comes **only from [LibreHardwareMonitor](https://github.com/LibreHardwareMo
 
 ### Windows Installer
 
-1. Download `SystemInfo_Setup_X.Y.Z.exe` from the [latest release](https://github.com/ClinicalSuppression/SystemInfo/releases/latest) and run it. It installs into Program Files with a Start Menu shortcut.
+1. Download `SystemInfo_Setup_X.Y.Z.exe` from the [latest release](https://github.com/ClinicalSuppression/system-info/releases/latest) and run it. It installs into Program Files with a Start Menu shortcut.
 2. Install [PawnIO](https://pawnio.com/) for full sensor coverage (optional but recommended).
 3. Launch SystemInfo. On first run it builds the stock layout for your machine.
 
 ### Portable
 
-Download the latest portable build (`SystemInfo_X.Y.Z_portable.exe`) from the [latest release](https://github.com/ClinicalSuppression/SystemInfo/releases/latest) and run it directly without installation.
+Download the latest portable build (`SystemInfo_X.Y.Z_portable.exe`) from the [latest release](https://github.com/ClinicalSuppression/system-info/releases/latest) and run it directly without installation.
 
 ### Terminal / CLI (Source)
 
 Clone the repository and build from source:
 
 ```powershell
-git clone https://github.com/ClinicalSuppression/SystemInfo.git
-cd SystemInfo
+git clone https://github.com/ClinicalSuppression/system-info.git
+cd system-info
 dotnet restore .\SystemInfo.slnx
 dotnet build .\SystemInfo.slnx -c Release -warnaserror
 dotnet publish .\SystemInfo.csproj -c Release -r win-x64 --self-contained false -warnaserror
@@ -88,8 +88,8 @@ CPU package temperature, motherboard SuperIO data, CPU power/fans and storage en
 ## Build from source
 
 ```powershell
-git clone https://github.com/ClinicalSuppression/SystemInfo.git
-cd SystemInfo
+git clone https://github.com/ClinicalSuppression/system-info.git
+cd system-info
 
 dotnet restore .\SystemInfo.slnx
 dotnet build .\SystemInfo.slnx -c Release -warnaserror
